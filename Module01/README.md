@@ -1,12 +1,12 @@
 # IoT Central Device Training
-## Module 01 - Setting up for Development
+## Module 01 - Setting up your Raspberry Pi
 
 ### Configuring the OS for the RPi (Raspbian)
 Our first thing to set up is your Raspbian image on the SD card that you load will into the MicroSD cart slot on the Raspberry Pi.
 
 #### Here are the tools you need to install...
 
-* The official SD Card Formatter from the SD Association. Install for your OS. [LINK: SD Crd Formatter](https://www.sdcard.org/downloads/formatter/)
+* The official SD Card Formatter from the SD Association. Install for your OS. [LINK: SD Card Formatter](https://www.sdcard.org/downloads/formatter/)
 
 * The tool called "balenaEtcher" which is used to copy your Raspbian image onto the formatted SD card. [LINK: balenaEtcher Download Page](https://www.balena.io/etcher/)
 
@@ -48,7 +48,3 @@ Have a coffee, it will take a bit to do a 16gig card...
 * Looking from the top of the RPi, install the SD card (the slot is on the bottom of the board) as shown in the picture below...
 
 ![alt text](../Assets/pi-sd.png "Pi SD Card Insert") 
-
-
-### Enabling Capabilities on the RPi
-### How to connect and SSH to your device
