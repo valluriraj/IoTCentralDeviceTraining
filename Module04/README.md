@@ -11,30 +11,10 @@ raspi-config is the Raspberry Pi configuration tool originally written by Alex B
 ### Usage
 You will be shown raspi-config on first booting into Raspbian. To open the configuration tool after this, simply run the following from the command line:
 sudo raspi-config
+
 The sudo is required because you will be changing files that you do not own as the pi user.
 You should see a blue screen with options in a grey box in the centre, like so:
 
-It has the following options available:
-
-```
-┌───────────────────┤ Raspberry Pi Software Configuration Tool (raspi-config) ────────────────────┐
-│                                                                                                 │
-│        1 Change User Password Change password for the current user                              │
-│        2 Network Options      Configure network settings                                        │
-│        3 Boot Options         Configure options for start-up                                    │
-│        4 Localisation Options Set up language and regional settings to match your location      │
-│        5 Interfacing Options  Configure connections to peripherals                              │
-│        6 Overclock            Configure overclocking for your Pi                                │
-│        7 Advanced Options     Configure advanced settings                                       │
-│        8 Update               Update this tool to the latest version                            │
-│        9 About raspi-config   Information about this configuration tool                         │
-│                                                                                                 │
-│                                                                                                 │
-│                                                                                                 │
-│                           <Select>                           <Finish>                           │
-│                                                                                                 │
-└─────────────────────────────────────────────────────────────────────────────────────────────────┘
-```
 ### Moving around the menu
 Use the up and down arrow keys to move the highlighted selection between the options available. Pressing the right arrow key will jump out of the Options menu and take you to the <Select> and <Finish> buttons. Pressing left will take you back to the options. Alternatively, you can use the Tab key to switch between these.
 
@@ -147,3 +127,24 @@ This tool provides a straightforward way of doing initial configuration of the R
 
 ### Finish
 Use this button when you have completed your changes. You will be asked whether you want to reboot or not. When used for the first time, it's best to reboot. There will be a delay in rebooting if you have chosen to resize your SD card.
+It has the following options available:
+
+```
+┌───────────────────┤ Raspberry Pi Software Configuration Tool (raspi-config) ────────────────────┐
+│                                                                                                 │
+│        1 Change User Password Change password for the current user                              │
+│        2 Network Options      Configure network settings                                        │
+│        3 Boot Options         Configure options for start-up                                    │
+│        4 Localisation Options Set up language and regional settings to match your location      │
+│        5 Interfacing Options  Configure connections to peripherals                              │
+│        6 Overclock            Configure overclocking for your Pi                                │
+│        7 Advanced Options     Configure advanced settings                                       │
+│        8 Update               Update this tool to the latest version                            │
+│        9 About raspi-config   Information about this configuration tool                         │
+│                                                                                                 │
+│                                                                                                 │
+│                                                                                                 │
+│                           <Select>                           <Finish>                           │
+│                                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────────────────────┘
+```
