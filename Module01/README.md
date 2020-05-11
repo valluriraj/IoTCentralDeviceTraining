@@ -40,7 +40,61 @@ Have a coffee, it will take a bit to do a 16gig card...
 
 ![alt text](../Assets/balenaetcher-dialog-flash.png "balenaEtcher flash")
 
-* Remove the card from your computer!
+#### Enable ssh to allow remote login
+For security reasons, ssh is no longer enabled by default. To enable it you need to place an empty file named ssh (no extension) in the root of the boot disk.
+
+##### Mac instructions (enable ssh)
+    Open up a terminal window and run this command:
+    
+    touch /Volumes/boot/ssh
+
+##### Windows instructions (ssh)
+    Run Notepad
+    * In a new file put in one space and nothing more
+    * Click File / Save As …
+    * Be sure to set Save as type to All Files (so the file is NOT saved with a .txt extension)
+    * Call the file ssh and save it
+    * Close the file
+    
+    If you are comfortable with the Windows command line you could try this instead (untested!):
+        * Open up a command line
+        * Switch to the drive and root where boot is located:
+        * Type: type NUL >> ssh
+        * Verify that file ssh was created
+
+#### Add your WiFi network info
+Create a file in the root of boot called: wpa_supplicant.conf (instructions below). Then paste the following into it (adjusting for your ISO 3166 alpha-2 country code, network name and network password):
+
+```
+country=US
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+
+network={
+    ssid="NETWORK-NAME"
+    psk="NETWORK-PASSWORD"
+}
+```
+
+##### Mac instructions (wifi settings)
+Create a new empty file that will hold network info:
+
+     touch /Volumes/boot/wpa_supplicant.conf
+
+Edit the file that you just created and paste the text above into it (adjusting for the name of your country code, network name and network password):
+
+##### Windows instructions (wifi settings)
+* Run Notepad
+* Paste in the contents above (adjusting for the name of your country code, network name and network password)
+* Click File / Save As …
+    Be sure to set Save as type to All Files (so the file is NOT saved with a .txt extension)
+* Call the file wpa_supplicant.conf and save it
+* Close the file
+ 
+#### Eject the micro SD card
+Right-click on boot (on your desktop or File Explorer) and select the Eject option
+This is a “logical” eject - meaning it closes files and preps the SD card for removal - you still have to pull the card out yourself
+
 
 #### Congratulations, you have prepared your OS for the Raspberry Pi
 
