@@ -2,7 +2,6 @@
 ## Module 02 - Getting to Know the Raspberry Pi
 
 ## A Tour of the Board
-Our first thing to set up is your Raspbian image on the SD card that you load will into the MicroSD cart slot on the Raspberry Pi.
 
 ![alt text](../Assets/rpi-pinout.png "Pi Pinout")
 
