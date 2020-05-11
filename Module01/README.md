@@ -4,7 +4,7 @@
 ### Configuring the OS for the RPi (Raspbian)
 Your first thing to get going is setting up  your Raspbian image onthe  SD card that you load into the MicroSD cart slot on the Raspberry Pi.
 
-Here are the tools you need to install...
+#### Here are the tools you need to install...
 
 * The official SD Card Formatter from the SD Association. Install for your OS. [LINK: SD Crd Formatter](https://www.sdcard.org/downloads/formatter/)
 
@@ -12,9 +12,9 @@ Here are the tools you need to install...
 
 * The OS Image for the RPi. We will install the full package named "Raspbian Buster with desktop and recommended software" [LINK: Raspbian Buster Download Page](https://www.raspberrypi.org/downloads/raspbian/)
 
-Now that you have all of that software installed, let's build our SD card for the RPi...
+#### Now that you have all of that software installed, let's build our SD card for the RPi...
 
-* Place your card into your SD slot on your computer and insure the system can see the card. DO NOT FORMAT IT if you are prompted by your Operating System, just dismiss the dialogs.
+* Place your card into your SD slot on your computer and insure the system can see the card. DO NOT FORMAT IT if you are prompted by your Operating System, just dismiss the dialogs
 * Start the SD Card Formatter software you downloaded. 
 
 ![alt text](../Assets/sd-formatter-app.png "SD Card Formatter")
@@ -23,7 +23,18 @@ Now that you have all of that software installed, let's build our SD card for th
 
 ![alt text](../Assets/sd-formatter-dialog.png "SD Card Formatter")
 
+Have a coffee, it will take a bit to do a 16gig card...
+
+#### Next Let's Copy Buster to the SD Card...
+
+* Close the SD Formatter Card application
+* Open the balenaEtcher application...
+
+![alt text](../Assets/balenaetcher-app.png "balenaEtcher application")
+
+* Click the "Select Image" button and select the zip file from the location yuou saved it when you downloaded Buster from the Raspberry Pi download page
  
+ ![alt text](../Assets/balenaetcher-dialog-select-image.png "balenaEtcher select image")
 
 ### Enabling Capabilities on the RPi
 ### How to connect and SSH to your device
