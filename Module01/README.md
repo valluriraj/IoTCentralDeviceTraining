@@ -2,7 +2,7 @@
 ## Module 01 - Setting up for Development
 
 ### Configuring the OS for the RPi (Raspbian)
-Your first thing to get going is setting up  your Raspbian image onthe  SD card that you load into the MicroSD cart slot on the Raspberry Pi.
+Our first thing to set up is your Raspbian image on the SD card that you load will into the MicroSD cart slot on the Raspberry Pi.
 
 #### Here are the tools you need to install...
 
@@ -32,9 +32,23 @@ Have a coffee, it will take a bit to do a 16gig card...
 
 ![alt text](../Assets/balenaetcher-app.png "balenaEtcher application")
 
-* Click the "Select Image" button and select the zip file from the location yuou saved it when you downloaded Buster from the Raspberry Pi download page
+* Click the "Select Image" button and select the zip file from the location where you saved it when you downloaded "Buster" from the Raspberry Pi download page
  
  ![alt text](../Assets/balenaetcher-dialog-select-image.png "balenaEtcher select image")
+
+ * Select the "Flash!" button and sit back let the etcher copy the image and verify it
+
+![alt text](../Assets/balenaetcher-dialog-flash.png "balenaEtcher flash")
+
+* Remove the card from your computer!
+
+#### Congratulations, you have prepared your OS for the Raspberry Pi
+
+* Make sure your RPi is not plugged in
+* Looking from the top of the RPi, install the SD card (the slot is on the bottom of the board) as shown in the picture below...
+
+![alt text](../Assets/pi-sd.png "Pi SD Card Insert") 
+
 
 ### Enabling Capabilities on the RPi
 ### How to connect and SSH to your device
