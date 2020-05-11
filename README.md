@@ -5,3 +5,6 @@
 
 ## Module 02 - Getting to Know the Raspberry Pi
 [LINK: Module 02 - Getting to Know the Raspberry Pi](./Module02/README.md)
+
+## Module 03 - Setting up your Development Toolchain
+[LINK: Module 03 - Setting up your Development Toolchain](./Module03/README.md)
