@@ -15,10 +15,15 @@ Here are the tools you need to install...
 Now that you have all of that software installed, let's build our SD card for the RPi...
 
 * Place your card into your SD slot on your computer and insure the system can see the card. DO NOT FORMAT IT if you are prompted by your Operating System, just dismiss the dialogs.
-* Start the SD Card Formatter software you downloaded. ![alt text](../Assets/sd-formatter-app.png "SD Card Formatter")
+* Start the SD Card Formatter software you downloaded. 
+
+![alt text](../Assets/sd-formatter-app.png "SD Card Formatter")
+
 * The dialog will open, find your SD card (make sure the right drive is selected) and choose the option to "Overwrite format" and give your image a name 
+
 ![alt text](../Assets/sd-formatter-dialog.png "SD Card Formatter")
-* 
+
+ 
 
 ### Enabling Capabilities on the RPi
 ### How to connect and SSH to your device
